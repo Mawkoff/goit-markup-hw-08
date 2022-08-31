@@ -1,0 +1,37 @@
+.item-soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    list-style: none;
+}
+
+.item-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--fill-svg-color);
+    background-color: inherit;
+    transition: background-color var(--main-transition);
+}
+
+.item-soc-link:hover .item-icon,
+.item-soc-link:focus .item-icon {
+    fill: var(--primary-white-color);
+}
+
+.item-soc-link:focus,
+.item-soc-link:hover {
+    background-color: var(--second-title-color);
+}
+
+.item-icon {
+    fill: var(--fill-svg-color);
+    transition: fill var(--main-transition);
+}

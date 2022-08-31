@@ -1,0 +1,37 @@
+.clients {
+    display: flex;
+
+    gap: 30px;
+    list-style: none;
+}
+
+.clients__type:hover .partner-foto,
+.clients__type:focus .partner-foto {
+    fill: var(--second-title-color);
+    transition: var(--main-transition);
+}
+
+.clients__type {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border-color: var(--second-title-color);
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition: color var(--main-transition), border-color var(--main-transition);
+}
+
+.clients__type:hover,
+.clients__type:focus {
+    border-color: var(--second-title-color);
+}
+
+.partner-foto {
+    transition: fill var(--main-transition);
+    fill: #afb1b8;
+}
