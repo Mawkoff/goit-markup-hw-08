@@ -82,6 +82,10 @@ button {
   margin-bottom: 50px;
 }
 
+.other-background {
+  background-color: #F5F4FA;
+}
+
 .header__container {
   display: flex;
   align-items: center;
