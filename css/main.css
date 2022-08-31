@@ -82,6 +82,10 @@ button {
   margin-bottom: 50px;
 }
 
+.other-background {
+  background-color: #F5F4FA;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -146,6 +150,23 @@ button {
   background: var(--primary-white-color);
 }
 
+.current {
+  color: var(--second-title-color);
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -33px;
+  left: 0;
+}
+
 .contacts__link {
   font-weight: 500;
   font-size: 14px;
@@ -207,23 +228,6 @@ button {
   color: var(--adress-prime-color);
 }
 
-.current {
-  color: var(--second-title-color);
-  position: relative;
-}
-
-.current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: currentColor;
-  border-radius: 2px;
-  position: absolute;
-  bottom: -33px;
-  left: 0;
-}
-
 .studio-title,
 .portfolio-title {
   font-weight: 500;
@@ -237,14 +241,14 @@ button {
   text-decoration: none;
 }
 
-.item-soc {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
   list-style: none;
 }
 
-.item-soc-link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,17 +262,17 @@ button {
   transition: background-color var(--main-transition);
 }
 
-.item-soc-link:hover .item-icon,
-.item-soc-link:focus .item-icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
   fill: var(--primary-white-color);
 }
 
-.item-soc-link:focus,
-.item-soc-link:hover {
+.socials__link:focus,
+.socials__link:hover {
   background-color: var(--second-title-color);
 }
 
-.item-icon {
+.socials__icon {
   fill: var(--fill-svg-color);
   transition: fill var(--main-transition);
 }
@@ -626,11 +630,6 @@ button {
   margin-bottom: 30px;
 }
 
-.svg-icon {
-  width: 70px;
-  height: 70px;
-}
-
 .features__title {
   font-weight: 700;
   font-size: 14px;
@@ -649,7 +648,7 @@ button {
   color: #757575;
 }
 
-.about-list {
+.features-item {
   text-decoration: none;
   width: 270px;
 }
@@ -666,12 +665,12 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-info {
+.team__info {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team__pre-title {
+.team__title {
   text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
@@ -681,7 +680,7 @@ button {
   color: var(--main-title-color);
 }
 
-.team-list-text {
+.team__text {
   text-align: center;
   margin-bottom: 16px;
   font-size: 16px;
@@ -700,13 +699,13 @@ button {
   list-style: none;
 }
 
-.clients__type:hover .partner-foto,
-.clients__type:focus .partner-foto {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--second-title-color);
   transition: var(--main-transition);
 }
 
-.clients__type {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -718,12 +717,12 @@ button {
   transition: color var(--main-transition), border-color var(--main-transition);
 }
 
-.clients__type:hover,
-.clients__type:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--second-title-color);
 }
 
-.partner-foto {
+.clients__icon {
   transition: fill var(--main-transition);
   fill: #afb1b8;
 }

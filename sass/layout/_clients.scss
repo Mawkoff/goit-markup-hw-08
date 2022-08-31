@@ -5,13 +5,13 @@
     list-style: none;
 }
 
-.clients__type:hover .partner-foto,
-.clients__type:focus .partner-foto {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
     fill: var(--second-title-color);
     transition: var(--main-transition);
 }
 
-.clients__type {
+.clients__link {
     display: flex;
 
     align-items: center;
@@ -26,12 +26,12 @@
     transition: color var(--main-transition), border-color var(--main-transition);
 }
 
-.clients__type:hover,
-.clients__type:focus {
+.clients__link:hover,
+.clients__link:focus {
     border-color: var(--second-title-color);
 }
 
-.partner-foto {
+.clients__icon {
     transition: fill var(--main-transition);
     fill: #afb1b8;
 }
