@@ -61,10 +61,10 @@
     display: block;
 
     transition: background-color var(--main-transition);
-}
 
-.hero__button:focus,
-.hero__button:hover {
-    color: var(--primary-white-color);
-    background-color: #188ce8;
+    &:focus,
+        &:hover {
+            color: var(--primary-white-color);
+            background-color: #188ce8;
+        }
 }

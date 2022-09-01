@@ -19,16 +19,16 @@
     fill: var(--fill-svg-color);
     background-color: inherit;
     transition: background-color var(--main-transition);
+
+    &:focus,
+        &:hover {
+            background-color: var(--second-title-color);
+        }
 }
 
 .socials__link:hover .socials__icon,
 .socials__link:focus .socials__icon {
     fill: var(--primary-white-color);
-}
-
-.socials__link:focus,
-.socials__link:hover {
-    background-color: var(--second-title-color);
 }
 
 .socials__icon {

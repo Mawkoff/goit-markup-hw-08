@@ -29,21 +29,20 @@
     letter-spacing: 0.03em;
 
     color: var(--primary-white-color);
-}
 
-.footer-link {
     display: block;
-
-    text-decoration: none;
-
-    margin-bottom: 20px;
+    
+        text-decoration: none;
+    
+        margin-bottom: 20px;
 }
-
-
 
 .address {
+    text-decoration: none;
+    font-style: var(--font-style);
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 2;
+
     letter-spacing: 0.03em;
 
     color: var(--primary-white-color);
@@ -61,33 +60,43 @@
 
     transition: color var(--main-transition),
         background-color var(--main-transition);
+
+        &:hover,
+            &:focus {
+                color: var(--second-title-color);
+            }
 }
 
 .address__mail {
-    margin-bottom: 9px;
-}
-
-.address__mail,
-.address__tel {
     font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+    
+        transition: color var(--main-transition);
+    margin-bottom: 9px;
 
-    color: rgba(255, 255, 255, 0.6);
-
-    transition: color var(--main-transition);
+    &:hover,
+        &:focus {
+            color: var(--second-title-color);
+        }
 }
 
-.adress__city:hover,
-.adress__city:focus,
-.address__mail:hover,
-.address__mail:focus,
-.address__tel:hover,
-.address__tel:focus {
-    color: var(--second-title-color);
-}
+.address__tel {
 
-/* ---------FOOTER SOCIES--------- */
+    font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+    
+        transition: color var(--main-transition);
+&:hover,
+    &:focus {
+        color: var(--second-title-color);
+    }
+}
 
 .footer__title {
     font-weight: 700;
@@ -119,6 +128,12 @@
     fill: currentColor;
 
     transition: background-color var(--main-transition);
+
+    &:hover,
+        &:focus {
+            color: var(--primary-white-color);
+            background-color: var(--second-title-color);
+        }
 }
 
 .footer-icon {
@@ -126,12 +141,6 @@
     width: 44px;
     height: 44px;
     padding: 0 12px;
-}
-
-.footer-soc__link:hover,
-.footer-soc__link:focus {
-    color: var(--primary-white-color);
-    background-color: var(--second-title-color);
 }
 
 .footer-connect {
@@ -146,10 +155,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.footer__pre-title {
     margin-bottom: 20px;
 }
 
@@ -170,10 +175,10 @@
     transition: border-color var(--main-transition),
         box-shadow var(--main-transition);
     cursor: pointer;
-}
 
-.footer__wrap:hover {
-    border-color: var(--second-title-color);
+    &:hover {
+            border-color: var(--second-title-color);
+        }
 }
 
 .footer-input {
@@ -228,32 +233,5 @@
     gap: 10px;
 }
 
-.address__city {
-    margin-bottom: 9px;
-}
 
-.address {
-    text-decoration: none;
-    font-style: var(--font-style);
-    font-size: 14px;
-    line-height: 2;
 
-    letter-spacing: 0.03em;
-
-    color: var(--primary-white-color);
-}
-
-.address__mail {
-    margin-bottom: 9px;
-}
-
-.address__mail,
-.address__tel {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 2;
-    font-style: var(--font-style);
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
-}

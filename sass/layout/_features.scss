@@ -1,14 +1,12 @@
 .features {
     display: flex;
     gap: 30px;
-}
 
-.features {
     font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color: var(--adress-prime-color);
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    
+        color: var(--adress-prime-color);
 }
 
 .features__icon-box {
