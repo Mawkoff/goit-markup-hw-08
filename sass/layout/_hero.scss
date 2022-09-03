@@ -1,8 +1,18 @@
-.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+.hero .container {
+    display: flex;
+    max-width: 480px;
+}
 
-    max-width: 1600px;
+.hero {
+    
+    padding-bottom: 118px;
+    padding-top: 118px;
+
+    margin-bottom: 60px;
+    
+
+    max-width: 480px;
+    
 
     margin-left: auto;
     margin-right: auto;
@@ -26,8 +36,8 @@
     max-width: 696px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    
+    line-height: 1.61;
     letter-spacing: 0.06em;
 
     margin-right: auto;
@@ -35,15 +45,20 @@
     margin-bottom: 30px;
 
     color: var(--primary-white-color);
+
+
 }
 
 .hero__button {
     text-align: center;
 
-    padding-top: 10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-    padding-left: 32px;
+    width: 200px;
+    height: 50px;
+
+    padding: 10px 24px;
+
+    margin-bottom: 118px;
+    
 
     font-weight: 700;
     font-size: 16px;
@@ -68,3 +83,6 @@
             background-color: #188ce8;
         }
 }
+
+
+

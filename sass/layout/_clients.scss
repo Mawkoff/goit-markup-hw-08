@@ -1,8 +1,19 @@
 .clients {
     display: flex;
-
+flex-wrap: wrap;
     gap: 30px;
     list-style: none;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    
+                }
 }
 
 .clients__link {
@@ -21,11 +32,19 @@
     &:hover,
     &:focus {
         border-color: var(--second-title-color);
-        fill: var(--second-title-color);
+        fill: color var(--second-title-color);
             transition: var(--main-transition);
     }
 }
 
+.clients__item {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 60px) / 3);
+        }
+}
+            
 .clients__icon {
     transition: fill var(--main-transition);
     fill: #afb1b8;
