@@ -4,6 +4,12 @@ flex-wrap: wrap;
     gap: 30px;
     list-style: none;
 
+    @media screen and (min-width: 480px) {
+        display: flex;
+            flex-wrap: wrap;
+    }
+            
+
     @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
@@ -40,14 +46,16 @@ flex-wrap: wrap;
 .clients__item {
     width: 100%;
 
-    @media screen and (min-width: 768px) {
-            width: calc((100% - 60px) / 3);
+    @media screen and (min-width: 480px) {
+            width: calc((100% - 30px) / 2);
+            height: 92px;
         }
 }
             
 .clients__icon {
-    transition: fill var(--main-transition);
+transition: fill var(--main-transition);
     fill: #afb1b8;
+
     &:hover,
     &:focus {
         fill: var(--second-title-color);

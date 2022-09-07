@@ -44,6 +44,12 @@ button {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 60px;
@@ -95,7 +101,6 @@ button {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -723,6 +728,12 @@ button {
   gap: 30px;
   list-style: none;
 }
+@media screen and (min-width: 480px) {
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients {
     display: flex;
@@ -756,9 +767,10 @@ button {
 .clients__item {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .clients__item {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 30px) / 2);
+    height: 92px;
   }
 }
 
