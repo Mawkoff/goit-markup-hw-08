@@ -25,10 +25,11 @@ flex-wrap: wrap;
 .clients__link {
     display: flex;
 
+    height: 100%;
     align-items: center;
     justify-content: center;
 
-    width: 170px;
+    
     height: 92px;
     border-color: var(--second-title-color);
     border: 1px solid #afb1b8;
@@ -47,9 +48,14 @@ flex-wrap: wrap;
     width: 100%;
 
     @media screen and (min-width: 480px) {
-            width: calc((100% - 30px) / 2);
-            height: 92px;
+            flex-basis: calc((100% - 30px) / 2);
+                height: 92px;
         }
+
+                @media screen and (min-width: 768px) {
+                    flex-basis: calc((100% - 120px) / 3);
+                    height: 92px;
+                }
 }
             
 .clients__icon {
