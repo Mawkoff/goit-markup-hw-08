@@ -7,19 +7,51 @@
         letter-spacing: 0.03em;
     
         color: var(--adress-prime-color);
+
+        @include mobile {
+                display: block;
+            }
+                        @media screen and (max-width: 767px) {
+                            display: block;
+                        }
+
+                                                @mixin tablet {
+                           display: flex;
+                           flex-wrap: wrap;
+                        justify-content: space-between;
+                        
+                        }
+
+                                                @mixin desctop {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        
 }
 
 .features__icon-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    
     height: 120px;
 
     background: #f5f4fa;
     border-radius: 4px;
 
     margin-bottom: 30px;
+
+    @mixin mobile {
+        width: 100%;
+    }
+                @mixin tablet {
+            width: 100%;
+        }
+                                @mixin desctop {
+                    height: 120px;
+                }
+
+
 }
 
 .features__title {
@@ -32,6 +64,21 @@
     margin-bottom: 10px;
 
     color: var(--main-title-color);
+
+    @mixin mobile {
+        display: block;
+        
+    }
+
+                @mixin tablet {
+
+        }
+                @mixin desctop {
+            text-align: left;
+            
+        }
+
+   
 }
 
 .features__text {
@@ -42,9 +89,53 @@
     letter-spacing: 0.03em;
 
     color: #757575;
+
+    @mixin mobile {
+        
+}
+
+@mixin tablet {
+    margin-bottom: 0;
+}
+
+
+@mixin desctop {
+    margin-bottom: 0;
+
+}
 }
 
 .features-item {
+    &:not(:last-child) {
+            @mixin tablet {
+                margin-bottom: 30px;
+            }
+        }
     text-decoration: none;
     width: 270px;
+
+    // calc((100% - кол-во_зазоров_в_строке * значение_ одного_зазора) / кол-во_элементов_в_строке)
+
+        @mixin mobile {
+            width: 100%;
+        }
+
+                                @mixin tablet  {
+                    flex-basis: calc((100% -  60px) / 2);
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: space-between;
+}
+
+@mixin desctop {
+    flex-basis: calc((100% - 30px * 3) / 4);
+        width: 100%;
+        height: 120px;
+        justify-content: space-between;
+}
+
+}
+
+.features-item:not(:last-child) {
+    margin-bottom: 30px;
 }

@@ -101,6 +101,7 @@ button {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -113,7 +114,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -547,14 +548,12 @@ button {
 }
 
 .hero .container {
-  display: flex;
   max-width: 480px;
 }
 
 .hero {
   padding-bottom: 118px;
   padding-top: 118px;
-  margin-bottom: 60px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -564,6 +563,16 @@ button {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/command.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    min-height: 400px;
+    padding-left: 0;
+    padding-right: 0;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+  }
 }
 
 .hero__title {
@@ -577,10 +586,15 @@ button {
   margin-bottom: 30px;
   color: var(--primary-white-color);
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
 
 .hero__button {
   text-align: center;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   padding: 10px 24px;
   margin-bottom: 118px;
@@ -639,12 +653,21 @@ button {
   letter-spacing: 0.03em;
   color: var(--adress-prime-color);
 }
+@media screen and (min-width: 480px) {
+  .features {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .features {
+    display: block;
+  }
+}
 
 .features__icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -673,6 +696,9 @@ button {
   text-decoration: none;
   width: 270px;
 }
+.features-item:not(:last-child) {
+  margin-bottom: 30px;
+}
 
 .team {
   display: flex;
@@ -686,16 +712,6 @@ button {
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-@media screen and (min-width: 768px) {
-  .team__item {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__item {
-    width: calc((100% - 90px) / 4);
-  }
 }
 
 .team__info {
@@ -728,28 +744,9 @@ button {
   gap: 30px;
   list-style: none;
 }
-@media screen and (min-width: 480px) {
-  .clients {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-}
 
 .clients__link {
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: center;
   height: 92px;
@@ -766,18 +763,6 @@ button {
 
 .clients__item {
   width: 100%;
-}
-@media screen and (min-width: 480px) {
-  .clients__item {
-    flex-basis: calc((100% - 30px) / 2);
-    height: 92px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients__item {
-    flex-basis: calc((100% - 60px) / 3);
-    height: 92px;
-  }
 }
 
 .clients__icon {

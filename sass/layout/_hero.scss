@@ -1,15 +1,13 @@
 .hero .container {
-    display: flex;
+    
     max-width: 480px;
+    
 }
 
 .hero {
     
     padding-bottom: 118px;
     padding-top: 118px;
-
-    margin-bottom: 60px;
-    
 
     max-width: 480px;
     
@@ -28,6 +26,15 @@
     background-repeat: no-repeat;
 
     background-size: cover;
+
+    @media screen and (min-width: 480px) {
+            min-height: 400px;
+            padding-left: 0;
+            padding-right: 0;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 60px;
+        }
 }
 
 .hero__title {
@@ -45,6 +52,9 @@
     margin-bottom: 30px;
 
     color: var(--primary-white-color);
+    @media screen and (min-width: 768px) {
+            max-width: 360px;
+        }
 
 
 }
@@ -52,7 +62,7 @@
 .hero__button {
     text-align: center;
 
-    width: 200px;
+    min-width: 200px;
     height: 50px;
 
     padding: 10px 24px;
