@@ -4,18 +4,18 @@ flex-wrap: wrap;
     gap: 30px;
     list-style: none;
 
-    @mixin mobile {
+    @include mobile {
         display: flex;
             flex-wrap: wrap;
     }
             
 
-        @mixin tablet {
+                @include tablet {
             display: flex;
             flex-wrap: wrap;
         }
 
-                                @mixin desctop {
+                                                                @include desctop {
                     display: flex;
                     flex-wrap: nowrap;
                     
@@ -48,12 +48,12 @@ flex-wrap: wrap;
 
     // calc((100% - кол-во_зазоров_в_строке * значение_ одного_зазора) / кол-во_элементов_в_строке)
 
-    @mixin mobile {
+    @include mobile {
             flex-basis: calc((100% - 30px) / 2);
                 height: 92px;
         }
 
-                                @mixin tablet {
+                                                                @include tablet {
                     flex-basis: calc((100% - 2 * 30px) / 3);
                     height: 92px;
                 }

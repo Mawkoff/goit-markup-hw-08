@@ -17,11 +17,11 @@
     border-radius: 0px 0px 4px 4px;
 
    
-    @mixin tablet {
+    @include tablet {
             width: calc((100% - 30px) / 2);
         }
 
-                                @mixin desctop {
+                                                                @include desctop {
                     width: calc((100% - 90px) / 4);
                 }
 }

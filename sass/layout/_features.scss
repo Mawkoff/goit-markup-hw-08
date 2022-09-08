@@ -1,4 +1,11 @@
 .features {
+    @include desctop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.features__list {
     display: flex;
     gap: 30px;
 
@@ -15,14 +22,14 @@
                             display: block;
                         }
 
-                                                @mixin tablet {
+                                                @include tablet {
                            display: flex;
                            flex-wrap: wrap;
                         justify-content: space-between;
                         
                         }
 
-                                                @mixin desctop {
+                                                                                                @include desctop {
                             display: flex;
                             justify-content: space-between;
                         }
@@ -41,13 +48,13 @@
 
     margin-bottom: 30px;
 
-    @mixin mobile {
+    @include mobile {
         width: 100%;
     }
-                @mixin tablet {
+                                @include tablet {
             width: 100%;
         }
-                                @mixin desctop {
+                                                                @include desctop {
                     height: 120px;
                 }
 
@@ -65,15 +72,15 @@
 
     color: var(--main-title-color);
 
-    @mixin mobile {
+    @include mobile {
         display: block;
         
     }
 
-                @mixin tablet {
+                                @include tablet {
 
         }
-                @mixin desctop {
+                                @include desctop {
             text-align: left;
             
         }
@@ -90,16 +97,16 @@
 
     color: #757575;
 
-    @mixin mobile {
+    @include mobile {
         
 }
 
-@mixin tablet {
+@include tablet {
     margin-bottom: 0;
 }
 
 
-@mixin desctop {
+@include desctop {
     margin-bottom: 0;
 
 }
@@ -107,7 +114,7 @@
 
 .features-item {
     &:not(:last-child) {
-            @mixin tablet {
+            @include tablet {
                 margin-bottom: 30px;
             }
         }
@@ -116,18 +123,18 @@
 
     // calc((100% - кол-во_зазоров_в_строке * значение_ одного_зазора) / кол-во_элементов_в_строке)
 
-        @mixin mobile {
+        @include mobile {
             width: 100%;
         }
 
-                                @mixin tablet  {
+                                                                @include tablet  {
                     flex-basis: calc((100% -  60px) / 2);
                     flex-wrap: wrap;
                     width: 100%;
                     justify-content: space-between;
 }
 
-@mixin desctop {
+@include desctop {
     flex-basis: calc((100% - 30px * 3) / 4);
         width: 100%;
         height: 120px;
