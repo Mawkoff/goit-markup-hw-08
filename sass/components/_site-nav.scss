@@ -1,5 +1,5 @@
 .site-nav__item {
-    margin-right: 50px;
+    // margin-right: 50px;
 
     font-weight: 500;
     font-size: 14px;
@@ -21,7 +21,14 @@
 
 
 .site-nav {
-    // display: flex;
+    display: flex;
+    flex-direction: column;
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+        line-height: 1.75;
+        font-weight: 500;
+        letter-spacing: .02em;
+
 @include mobile {
         display: flex;
             flex-direction: column;
@@ -30,6 +37,15 @@
 }
 
 .site-nav__link {
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: .02em;
+        color: var(--primari-text-color);
+        display: block;
+        padding: 32px 0;
+        transition: color var(--timing) var(--cubic);
+        position: relative;
     color: inherit;
     transition: color var(--main-transition);
 
