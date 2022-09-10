@@ -1,21 +1,33 @@
 .features {
-    @include desctop {
-        padding-top: 94px;
-        
-    }
 
-        @include tablet {
+@include min-mobile {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+    @include mobile {
             padding-top: 60px;
             padding-bottom: 60px;
     
+    
         }
 
-                @include mobile {
-                    padding-top: 60px;
-                    padding-bottom: 60px;
-                    
+
+@include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+    @include desctop {
+        padding-top: 94px;
+        padding-bottom: 94px;
         
-                }
+    }
+
+        
+
+                
 }
 
 .features__list {
@@ -129,11 +141,11 @@
 .features-item {
     &:not(:last-child) {
             @include tablet {
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
             }
         }
     text-decoration: none;
-    width: 270px;
+    // width: 270px;
 
     // calc((100% - кол-во_зазоров_в_строке * значение_ одного_зазора) / кол-во_элементов_в_строке)
 

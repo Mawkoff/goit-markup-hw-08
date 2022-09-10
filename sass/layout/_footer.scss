@@ -1,25 +1,91 @@
 .info {
+    width: 100%;
     background-color: #2f303a;
 
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @include mobile {
+        padding-top: 60px;
+            padding-bottom: 60px;
+            
+
+    }
+
+        @include tablet {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            
+        }
+
+                                @include desctop {
+                                    padding-top: 60px;
+                                    padding-bottom: 60px;
+                                }
+
+    
 }
 
 .adress__list {
     list-style: none;
+
+    @include mobile {
+        margin-bottom: 60px;
+        text-align: center;
+    }
 }
 
 .footer {
+    width: 100%;
+        text-align: center;
     display: flex;
+        flex-direction: column;
+        
 
-    align-items: baseline;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+                @include desctop {
+                    display: flex;
+                        justify-content: flex-start;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        align-items: baseline;
+                        text-align: left;
+                        align-content: space-around;
+
+                     
+                }
 }
 
 .footer-up {
-    display: block;
-    width: 231px;
-    margin-right: 70px;
+
+    // display: block;
+        // width: 231px;
+        // margin-right: 70px;
+    
+        @include tablet {
+            flex-grow: 1;
+            
 }
+ @include desctop {
+    display: block;
+
+ }
+    
+}
+               
 
 .footer-link {
     font-family: "Raleway";
@@ -35,6 +101,15 @@
         text-decoration: none;
     
         margin-bottom: 20px;
+
+        @include mobile {
+            text-align: center;
+        }
+
+                                @include desctop {
+                                padding-bottom: 25px;
+                                    padding-top: 25px;
+                                }
 }
 
 .address {
@@ -46,6 +121,12 @@
     letter-spacing: 0.03em;
 
     color: var(--primary-white-color);
+
+    @include desctop {
+        margin-bottom: 0px;
+            width: 258px;
+        }
+    
 }
 
 .adress__city {
@@ -65,6 +146,10 @@
             &:focus {
                 color: var(--second-title-color);
             }
+
+                        @include mobile {
+                            text-align: center;
+                        }
 }
 
 .address__mail {
@@ -81,6 +166,10 @@
         &:focus {
             color: var(--second-title-color);
         }
+
+                @include mobile {
+                    text-align: center;
+                }
 }
 
 .address__tel {
@@ -96,6 +185,14 @@
     &:focus {
         color: var(--second-title-color);
     }
+
+        @include mobile {
+            margin-bottom: 60px;
+        }
+
+                @include desctop {
+                    margin-bottom: 0;
+                }
 }
 
 .footer__title {
@@ -107,15 +204,48 @@
 
     color: var(--primary-white-color);
     margin-bottom: 20px;
+
+    @include mobile {
+        text-align: center;
+    }
+
+        
 }
 
 .footer-soc {
     display: flex;
     gap: 10px;
+
+    @include tablet {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .footer-soc__list {
     list-style: none;
+
+}
+
+.footer-social {
+
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    @include tablet {
+        flex-grow: 1;
+    }
+
+        @include desctop {
+            flex-grow: 0;
+        }
+@include desctop {
+    margin-left: 70px;
+        margin-bottom: 60px;
+}
+                
+        
 }
 
 .footer-soc__link {
@@ -134,6 +264,10 @@
             color: var(--primary-white-color);
             background-color: var(--second-title-color);
         }
+
+                @include mobile {
+                    margin-bottom: 60px;
+                }
 }
 
 .footer-icon {
@@ -144,8 +278,26 @@
 }
 
 .footer-connect {
-    width: calc(50% - 15px);
-    margin-left: auto;
+    // width: calc(50% - 15px);
+    // margin-left: auto;
+    display: flex;
+        width: calc(50% - 15px);
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+
+    @include mobile {
+        width: 100%;
+        text-align: center;
+    }
+@include desctop {
+    
+    margin: 0;
+        margin-left: 93px;
+}
+        
+
+       
 }
 
 .footer__pre-title {
@@ -156,12 +308,40 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
+
+    @include mobile {
+        text-align: center;
+    }
 }
 
 .footer__emeil-title {
+    // display: flex;
+    // gap: 12px;
     display: flex;
-    gap: 12px;
+        flex-direction: column;
+    
+
+    @include mobile {
+        display: flex;
+        flex-wrap: wrap;
+        width: 450px;
+        
+        // height: 50px;
+    }
+
+        @include tablet {
+            display: flex;
+            width: 100%;
+            
+        }
+
+                @include desctop {
+display: flex;
+    width: 570px;
+    flex-direction: row;
+                }
 }
+
 
 .footer__wrap {
     width: 100%;
@@ -179,6 +359,25 @@
     &:hover {
             border-color: var(--second-title-color);
         }
+
+
+                @include mobile {
+                    
+                    height: 50px;
+                    margin-bottom: 20px;
+                }
+
+                                @include tablet {
+                                    margin-bottom: 20px;
+                                }
+@include desctop {
+    margin-bottom: 0;
+        width: 330px;
+}
+                                                                
+
+                                
+               
 }
 
 .footer-input {
@@ -226,6 +425,14 @@
     transition: background-color var(--main-transition),
         color var(--main-transition);
     gap: 10px;
+
+@include desctop {
+display: flex;
+    flex-direction: row;
+    margin-left: 12px;
+    text-align: left;
+}
+    
 }
 
 .footer-btn__icon {

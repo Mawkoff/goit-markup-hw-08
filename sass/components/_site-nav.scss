@@ -12,13 +12,21 @@
 }
 
 .navigation {
-    margin-left: 93px;
+    // margin-left: 93px;
 
     background: var(--primary-white-color);
+
+    
 }
+
 
 .site-nav {
     display: flex;
+@include mobile {
+        display: flex;
+            flex-direction: column;
+    }
+    
 }
 
 .site-nav__link {
