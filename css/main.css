@@ -244,6 +244,28 @@ button {
   display: none;
 }
 
+.mobile-soc {
+  display: flex;
+  list-style: none;
+}
+
+.mobile-soc__list:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.mobile-soc__list:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-soc__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--second-title-color);
+}
+
 .contacts__link {
   display: flex;
   align-items: center;
