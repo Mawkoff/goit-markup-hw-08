@@ -9,6 +9,14 @@
     &:last-child {
             margin-right: 0;
         }
+
+//                 @media screen and (max-width: 767px) {
+
+//                 &:not(:last-child) {
+//                     margin-bottom: 32px;
+//                 }
+                    
+// }
 }
 
 .navigation {
@@ -38,8 +46,8 @@
 
 .site-nav__link {
     font-weight: 500;
-        font-size: 40px;
-        line-height: 1.18;
+        font-size: 25px;
+        line-height: 1.17;
         letter-spacing: .02em;
         color: var(--primari-text-color);
         display: block;
@@ -53,6 +61,16 @@
     &:focus {
             color: var(--second-title-color);
         }
+@media screen and (min-width: 480px) {
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: .02em;
+}
+                // font-weight: 500;
+                // font-size: 40px;
+                // line-height: 1.17;
+                // letter-spacing: .02em;
 }
 
 .current {
@@ -100,5 +118,12 @@
         letter-spacing: .02em;
         text-decoration: none;
         color: var(--second-title-color);
+
+        @media screen and (min-width: 480px)  {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.22;
+                letter-spacing: .02em;
+            }
 }
 

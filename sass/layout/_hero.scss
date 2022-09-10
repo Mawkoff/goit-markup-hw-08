@@ -1,16 +1,9 @@
-.hero .container {
-    
-    max-width: 480px;
-    
-}
-
 .hero {
-    
+
+    max-width: 1600px;
+
     padding-bottom: 118px;
     padding-top: 118px;
-
-    max-width: 480px;
-    
 
     margin-left: auto;
     margin-right: auto;
@@ -20,27 +13,42 @@
 
     background-color: #2f303a;
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/command.jpg);
+    background-image: var(--bg-gradient), url(/img/hero-bg-mob.jpg);
+        
     background-repeat: no-repeat;
 
     background-size: cover;
 
-    @media screen and (min-width: 480px) {
-            min-height: 400px;
-            padding-left: 0;
-            padding-right: 0;
-            background-size: cover;
-            background-position: center;
-            padding-bottom: 60px;
+    @include retina {
+            background-image: var(--bg-gradient) , url("../img/hero-bg-mob-2x.jpg");
         }
+
+                @include tablet {
+                    background-image: var(--bg-gradient), url(../img/hero-bg-tab.jpg);
+        
+                    @include retina {
+                        background-image: var(--bg-gradient), url("../img/hero-bg-tab-2x.jpg");
+                    }
+                }
+                                @include desctop {
+                                    background-image: var(--bg-gradient), url(../img/hero-bg-desc.jpg);
+                
+                                    @include retina {
+                                        background-image: var(--bg-gradient), url("../img/hero-bg-desc-2x.jpg");
+                                    }
+                
+                                    padding-top: 200px;
+                                    padding-bottom: 200px;
+                                }
 }
 
+
 .hero__title {
+
+    @include font(900, 22px, 1.62, 0.06em);
     text-align: center;
 
-    max-width: 696px;
+    max-width: 360px;
 
     font-weight: 900;
     
@@ -52,11 +60,16 @@
     margin-bottom: 30px;
 
     color: var(--primary-white-color);
-    @media screen and (min-width: 768px) {
-            max-width: 360px;
+
+    @include mobile {
+            @include font(900, 26px, 1.62, 0.06em);
         }
-
-
+    
+        @include desctop {
+            max-width: 696px;
+            @include font(900, 44px, 1.36, 0.06em);
+        }
+    
 }
 
 .hero__button {
@@ -67,7 +80,7 @@
 
     padding: 10px 24px;
 
-    margin-bottom: 118px;
+    // margin-bottom: 118px;
     
 
     font-weight: 700;
@@ -92,7 +105,9 @@
             color: var(--primary-white-color);
             background-color: #188ce8;
         }
+
+                @include desctop {
+                    min-width: 216;
+                }
 }
-
-
 
