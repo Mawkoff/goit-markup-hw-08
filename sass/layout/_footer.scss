@@ -36,10 +36,12 @@
 }
 
 .footer {
-    width: 100%;
-        text-align: center;
-    display: flex;
-        flex-direction: column;
+    // width: 100%;
+    //     text-align: center;
+    // display: flex;
+    //     flex-direction: column;
+        
+        
         
 
 
@@ -55,6 +57,10 @@
             flex-wrap: wrap;
             align-items: flex-start;
         }
+
+                @media screen and (max-width: 1199px) {
+                    text-align: center;
+                }
 
                 @include desctop {
                     display: flex;
@@ -223,6 +229,8 @@
 }
 
 .footer-soc__list {
+    width: 44px;
+        height: 44px;
     list-style: none;
 
 }
@@ -247,6 +255,18 @@
                 
         
 }
+
+.footer__address-up {
+
+    @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-left: 75px;
+        }
+    }
+
 
 .footer-soc__link {
     display: block;
@@ -280,11 +300,17 @@
 .footer-connect {
     // width: calc(50% - 15px);
     // margin-left: auto;
-    display: flex;
-        width: calc(50% - 15px);
-        margin: auto;
-        flex-direction: column;
-        align-items: center;
+    // display: flex;
+    //     width: calc(50% - 15px);
+    //     margin: auto;
+    //     flex-direction: column;
+    //     align-items: center;
+
+        display: flex;
+            width: 100%;
+            margin: auto;
+            flex-direction: column;
+        
 
     @include mobile {
         width: 100%;
@@ -294,6 +320,10 @@
     
     margin: 0;
         margin-left: 93px;
+}
+
+@media screen and (max-width: 1199px) {
+    margin-top: 60px;
 }
         
 
@@ -319,6 +349,7 @@
     // gap: 12px;
     display: flex;
         flex-direction: column;
+            align-items: center;
     
 
     @include mobile {
@@ -344,41 +375,48 @@ display: flex;
 
 
 .footer__wrap {
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: transparent;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: rgba(0, 0, 0, 0);
     border-radius: 4px;
-    background-color: inherit;
-    color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
-    outline: none;
-    transition: border-color var(--main-transition),
-        box-shadow var(--main-transition);
     cursor: pointer;
+
+        @include font(null, 16px, 1.25, 0.03em);
+        color: rgba(255, 255, 255, 0.6);
+    
+        outline: 1px solid rgba(255, 255, 255, 0.3);
+    
+        @media screen and (max-width: 479px) {
+            width: 100%;
+        }
+    
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+    
+        @include tablet {
+            width: 450px;
+        }
+    
+        @include desctop {
+            width: 358px;
+        }
+    
 
     &:hover {
             border-color: var(--second-title-color);
         }
-
-
-                @include mobile {
-                    
-                    height: 50px;
-                    margin-bottom: 20px;
-                }
-
-                                @include tablet {
-                                    margin-bottom: 20px;
-                                }
-@include desctop {
-    margin-bottom: 0;
-        width: 330px;
 }
+
+                                
                                                                 
 
                                 
                
-}
+
 
 .footer-input {
     gap: 10px;
