@@ -665,9 +665,20 @@ button {
 }
 
 .button-close {
+  fill: var(--second-title-color);
+  border: none;
+  background-color: #fff;
   display: block;
   margin-left: auto;
   margin-bottom: 8px;
+}
+
+.mobile-menu-navigation {
+  margin-bottom: 158px;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-menu__link {
@@ -686,8 +697,50 @@ button {
   color: var(--second-title-color);
 }
 
+.mobile-connect {
+  margin-bottom: 64px;
+}
+
+.mobile-connect__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.tel {
+  margin-top: 32px;
+}
+
 .mobile-connect__link-color {
   color: var(--second-title-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-soc-list {
+  display: flex;
+  margin-top: 64px;
+}
+
+.mobile-soc-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--second-title-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile-soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
 }
 
 .hero {

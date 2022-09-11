@@ -100,16 +100,12 @@
     list-style: none;
 }
 
-.mobile-soc__list {
-    &:not(:last-child) {
-            border-right: 1px solid rgba(33, 33, 33, .2);
-            padding-right: 10px;
-}
+
 
 &:not(:first-child) {
     padding-left: 10px;
 }
-}
+
 
 .mobile-soc__link {
     font-weight: 500;

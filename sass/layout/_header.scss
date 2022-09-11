@@ -22,23 +22,23 @@
 //     color: var(--adress-prime-color);
 // }
 
-.header {}
+// .header {}
 
-.container {}
+// .menu-container {}
 
-.header__container {}
+// .header__container {}
 
-.header__logo {}
+// .header__logo {}
 
-.link {}
+// .link {}
 
-.logo__dark {}
+// .logo__dark {}
 
 .button-open {
     margin-left: auto;
 }
 
-.button-icon {}
+// .button-icon {}
 
 .mobile-menu {
     position: fixed;
@@ -53,19 +53,26 @@
 }
 
 .button-close {
+    fill: var(--second-title-color);
+    border: none;
+    background-color: #fff;
     display: block;
     margin-left: auto;
     margin-bottom: 8px;
 }
 
-.mobile-menu-navigation {}
+.mobile-menu-navigation {
+    margin-bottom: 158px;
 
-.mobile-menu-list {}
+}
 
-.list {}
+// .mobile-menu-list {}
 
-.mobile-menu__item:nth-last-child() {
+// .list {}
+
+.mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
+    
 
 }
 
@@ -88,30 +95,76 @@
     color: var(--second-title-color);
 }
 
-.current {}
+// .current {}
 
-.site-nav__link {}
+// .site-nav__link {}
 
-.mobile-connect {}
+.mobile-connect {
+    margin-bottom: 64px;
+}
 
-.mobile-connect-list {}
+// .mobile-connect-list {}
 
-.mail {}
+// .mail {}
 
-.mobile-connect__link {}
+.mobile-connect__link {
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+    
+        color: #757575;
+}
 
-.mobile-connect__icon {}
+// .mobile-connect__icon {
+    
+// }
 
-.tel {}
+.tel {
+    margin-top: 32px;
+}
 
 .mobile-connect__link-color {
     color: var(--second-title-color);
+    font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        
+    
+        letter-spacing: 0.02em;
+        
 }
 
-.mobile-soc-list {}
+.mobile-soc-list {
 
-.mobile-soc-item {}
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.mobile-soc-item {
+    &:not(:last-child) {
+            border-right: 1px solid rgba(33, 33, 33, .2);
+            padding-right: 10px;
+            margin-right: 10px;
+}
+}
 
 .mobile-soc-link {
+    
+    
+font-weight: 500;
+    font-size: 12px;
+    line-height: 1.22;
+    letter-spacing: .02em;
+    text-decoration: none;
+    color: var(--second-title-color);
 
+    @media screen and (min-width: 480px) {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: .02em;
+    }
 }
