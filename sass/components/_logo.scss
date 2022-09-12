@@ -1,16 +1,18 @@
-
-
 .header__logo {
 font-family: "Raleway", "sans-serif";
 
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 
     color: var(--second-title-color);
 
     padding: 14px 0 15px;
+
+    @include desctop {
+            @include font(null, 26px, 1.19, null);
+        }
 }
 
 .logo__white {
@@ -20,9 +22,10 @@ font-family: "Raleway", "sans-serif";
 .logo__dark {
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 
     color: #000000;
 }
+

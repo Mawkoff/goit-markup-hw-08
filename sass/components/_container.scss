@@ -22,34 +22,3 @@
                 }
 }
 
-.header__container {
-    width: 100%;
-
-    padding-left: 15px;
-    padding-right: 15px;
-
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @include mobile {
-        width: 480px;
-        
-    }
-
-        @media screen and (max-width: 767px) {
-            justify-content: space-between;
-                padding-right: 0;
-                position: relative;
-        }
-
-    @include tablet {
-        width: 768px;
-    }
-
-    @include desctop {
-        width: 1200px;
-    }
-}
