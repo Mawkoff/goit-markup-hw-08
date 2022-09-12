@@ -29,3 +29,51 @@
                 }
 
 
+.menu {
+              display: none; 
+
+              @include tablet {
+display: flex;
+background-color: burlywood;
+    }     
+}
+
+.container-menu {
+    display: none;
+
+    @include tablet {
+display: flex;
+background-color: burlywood;
+    }
+    
+    
+}
+.menu-list {
+}
+.list {
+}
+.menu__item {
+}
+.menu__link-color {
+}
+.link {
+}
+.menu__link {
+}
+.menu-connect {
+    display: none;
+}
+.menu-connect-list {
+}
+.menu__tel {
+}
+.menu-connect__link {
+}
+.current {
+}
+.menu-connect__icon {
+}
+.menu-connect__link-color {
+}
+.menu__mail {
+}

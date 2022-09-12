@@ -5,12 +5,22 @@
     padding-left: 24px;
 
     border: 1px solid #eeeeee;
+
+    @include tablet {
+			flex-grow: 1;
+		}
 }
 
 .development {
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
+
+    @include tablet {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
 }
 
 .development__list {
@@ -27,6 +37,20 @@
         &:nth-last-child(-n + 6) {
             margin-bottom: 0;
         }
+
+        @include tablet {
+			flex-basis: calc((100% - 30px) / 2);
+		}
+
+		@include desctop {
+			flex-basis: calc((100% - 2 * 30px) / 3);
+		}
+
+		&:not(:last-child) {
+			@media screen and (max-width: 767px) {
+				margin-bottom: 30px;
+			}
+		}
 
 }
 
@@ -69,6 +93,18 @@
     transform: translateY(100%);
     
     transition: transform var(--main-transition);
+
+    @include mobile {
+			padding: 77px 24px;
+		}
+
+		@include tablet {
+			padding: 49px 24px;
+		}
+
+		@include desctop {
+			padding: 63px 24px;
+		}
 }
 
 .development__foto {
