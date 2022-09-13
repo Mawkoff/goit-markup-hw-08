@@ -1,12 +1,12 @@
 .container {
-    width: 100%;
+    // width: 100%;
 
     padding-left: 15px;
     padding-right: 15px;
 
     margin-left: auto;
     margin-right: auto;
-    // background-color: burlywood;
+    background-color: burlywood;
 
 
     @include mobile {
@@ -20,6 +20,18 @@
                 @include desctop {
                     width: 1200px;
                 }
+}
+
+
+.header__container {
+
+display: flex;
+align-items: center;
+
+@include min-mobile {
+    justify-content: space-between;
+}
+
 }
 
  
