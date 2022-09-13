@@ -50,7 +50,7 @@
                                                 @include tablet {
                            display: flex;
                            flex-wrap: wrap;
-                        justify-content: space-between;
+                        // justify-content: space-between;
                         
                         }
 
@@ -154,11 +154,12 @@
         }
 
                                                                 @include tablet  {
-                    flex-basis: calc((100% -  60px) / 2);
+                    flex-basis: calc((100% -  30px) / 2);
                     flex-wrap: wrap;
                     width: 100%;
                     justify-content: space-between;
 }
+
 
 @include desctop {
     flex-basis: calc((100% - 30px * 3) / 4);
@@ -170,5 +171,5 @@
 }
 
 .features-item:not(:last-child) {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 }

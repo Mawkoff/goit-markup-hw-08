@@ -103,6 +103,7 @@ button {
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -115,7 +116,6 @@ button {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: burlywood;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -134,6 +134,8 @@ button {
 }
 
 .header__container {
+  background-color: burlywood;
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -327,12 +329,13 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  width: 100%;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), min-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
 }
@@ -470,15 +473,14 @@ button {
 }
 
 .check-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  display: flex;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -528,6 +530,11 @@ button {
   padding: 10px 52px;
   border-color: var(--second-title-color);
 }
+@media mobile {
+  .button-check {
+    margin-top: 40px;
+  }
+}
 
 .check-condition {
   margin-left: 7px;
@@ -535,6 +542,10 @@ button {
   transition: var(--main-transition);
 }
 
+.button-open {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
 @media screen and (min-width: 768px) {
   .button-open {
     display: none;
@@ -562,6 +573,21 @@ button {
   }
 }
 
+.button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  color: var(--main-title-color);
+  background: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (min-width: 768px) {
   .button-close {
     display: none;
@@ -762,7 +788,6 @@ button {
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -846,7 +871,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .features-item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
@@ -859,10 +884,6 @@ button {
     margin-bottom: 0;
     justify-content: space-between;
   }
-}
-
-.features-item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .team {
@@ -1008,13 +1029,6 @@ button {
   list-style: none;
 }
 @media screen and (min-width: 480px) {
-  .adress__list {
-    margin-bottom: 60px;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 480px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -1026,7 +1040,8 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: baseline;
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1037,12 +1052,10 @@ button {
 @media screen and (min-width: 1200px) {
   .footer {
     display: flex;
-    justify-content: flex-start;
+    text-align: left;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: baseline;
-    text-align: left;
-    align-content: space-around;
+    align-content: center;
   }
 }
 
@@ -1068,18 +1081,6 @@ button {
   text-decoration: none;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
-  .footer-link {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-link {
-    padding-bottom: 25px;
-    padding-top: 25px;
-  }
-}
-
 .address {
   text-decoration: none;
   font-style: var(--font-style);
@@ -1091,7 +1092,6 @@ button {
 @media screen and (min-width: 1200px) {
   .address {
     margin-bottom: 0px;
-    width: 258px;
   }
 }
 
@@ -1162,12 +1162,6 @@ button {
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
-  .footer__title {
-    text-align: center;
-  }
-}
-
 .footer-soc {
   display: flex;
   gap: 10px;
@@ -1187,13 +1181,7 @@ button {
 
 .footer-social {
   display: flex;
-  align-items: center;
   flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .footer-social {
-    flex-grow: 1;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
@@ -1203,7 +1191,6 @@ button {
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-left: 70px;
-    margin-bottom: 60px;
   }
 }
 
@@ -1212,12 +1199,6 @@ button {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__address-up {
-    margin-left: 75px;
-  }
-}
-
 .footer-soc__link {
   display: block;
   color: var(--primary-white-color);
@@ -1245,19 +1226,20 @@ button {
 
 .footer-connect {
   display: flex;
-  width: 100%;
   margin: auto;
   flex-direction: column;
 }
 @media screen and (min-width: 480px) {
   .footer-connect {
-    width: 100%;
     text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-connect {
-    margin: 0;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
     margin-left: 93px;
   }
 }
@@ -1310,7 +1292,6 @@ button {
 
 .footer__wrap {
   width: 358px;
-  height: 50px;
   padding: 15px 16px;
   background-color: transparent;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1401,7 +1382,7 @@ button {
 }
 
 .menu {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 8px;
@@ -1484,7 +1465,6 @@ button {
 
 .development__list {
   gap: 30px;
-  width: 370px;
   background: #ffffff;
 }
 .development__list:nth-last-child(-n+6) {
@@ -1503,12 +1483,6 @@ button {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (max-width: 767px) {
-  .development__list:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 .development__top--wrap {
   position: relative;
   overflow: hidden;
@@ -1516,6 +1490,9 @@ button {
 
 .development__foto {
   transition: box-shadow var(--main-transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .development__foto:hover .development__top--text,

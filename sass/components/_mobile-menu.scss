@@ -12,6 +12,9 @@
 .logo__dark {
 }
 .button-open {
+background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+
   @include tablet {
     display: none;
   }
@@ -72,6 +75,21 @@
 .mobile-soc-link {
 }
 .button-close {
+
+  position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    color: var(--main-title-color);
+    background: var(--primary-white-color);
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   @include tablet {
     display: none;
   }

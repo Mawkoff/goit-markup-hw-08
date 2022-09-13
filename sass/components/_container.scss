@@ -6,7 +6,7 @@
 
     margin-left: auto;
     margin-right: auto;
-    background-color: burlywood;
+    
 
 
     @include mobile {
@@ -24,7 +24,8 @@
 
 
 .header__container {
-
+    background-color: burlywood;
+position: relative;
 display: flex;
 align-items: center;
 
