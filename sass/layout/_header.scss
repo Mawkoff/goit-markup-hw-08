@@ -2,9 +2,9 @@
     border-bottom: 1px solid #ececec;
 
     @media screen and (max-width: 767px) {
-            height: 60px;
-            display: flex;
-            align-items: center;
+            // height: 60px;
+            // display: flex;
+            // align-items: center;
         }
         @include mobile {
             justify-content: space-between;
