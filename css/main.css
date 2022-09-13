@@ -87,6 +87,10 @@ button {
   }
 }
 
+.section section--only--top__portfolio {
+  padding-top: 0;
+}
+
 .section__title {
   text-align: center;
   font-weight: 700;
@@ -107,6 +111,7 @@ button {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -755,28 +760,14 @@ button {
   }
 }
 
-.menu {
+.tablet-items {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .menu {
+  .tablet-items {
     display: flex;
     background-color: burlywood;
   }
-}
-
-.container-menu {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .container-menu {
-    display: flex;
-    background-color: burlywood;
-  }
-}
-
-.menu-connect {
-  display: none;
 }
 
 .hero {

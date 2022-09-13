@@ -29,25 +29,17 @@
                 }
 
 
-.menu {
+.tablet-items {
               display: none; 
 
               @include tablet {
+                // width: 768px;
+                //     height: 79px;
 display: flex;
 background-color: burlywood;
     }     
 }
 
-.container-menu {
-    display: none;
-
-    @include tablet {
-display: flex;
-background-color: burlywood;
-    }
-    
-    
-}
 .menu-list {
 }
 .list {
@@ -60,8 +52,8 @@ background-color: burlywood;
 }
 .menu__link {
 }
-.menu-connect {
-    display: none;
+.tablet-items-connect {
+    
 }
 .menu-connect-list {
 }
