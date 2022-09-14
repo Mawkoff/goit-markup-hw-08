@@ -1567,7 +1567,6 @@ button {
 
 .footer-connect {
   display: flex;
-  margin: auto;
   flex-direction: column;
 }
 @media screen and (min-width: 480px) {
@@ -1578,7 +1577,6 @@ button {
 @media screen and (min-width: 1200px) {
   .footer-connect {
     display: flex;
-    margin: auto;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 93px;
