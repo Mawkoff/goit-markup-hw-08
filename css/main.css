@@ -108,7 +108,7 @@ button {
 }
 
 .other-background {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .container {
@@ -1647,24 +1647,36 @@ button {
   .footer__wrap {
     width: 100%;
   }
+  .footer__wrap:hover {
+    outline: 2px solid var(--second-title-color);
+  }
 }
 @media screen and (max-width: 1199px) {
   .footer__wrap {
     margin-bottom: 20px;
+  }
+  .footer__wrap:hover {
+    outline: 2px solid var(--second-title-color);
   }
 }
 @media screen and (min-width: 768px) {
   .footer__wrap {
     width: 450px;
   }
+  .footer__wrap:hover {
+    outline: 2px solid var(--second-title-color);
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__wrap {
     width: 358px;
   }
+  .footer__wrap:hover {
+    outline: 2px solid var(--second-title-color);
+  }
 }
 .footer__wrap:hover {
-  border-color: var(--second-title-color);
+  border-color: 2px solid var(--second-title-color);
 }
 
 .footer-input {

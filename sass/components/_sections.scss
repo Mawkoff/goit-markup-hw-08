@@ -1,64 +1,61 @@
 .section {
-    
-@media screen and (max-width: 767px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-@media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
-}
+  }
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-}
-
+  }
 }
 
 .section__title--visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .section--only--top {
-    padding-top: 0;
+  padding-top: 0;
 
-    @media screen and (max-width: 1199px) {
-            display: none;
-        }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .section section--only--top__portfolio {
-padding-top: 0;
+  padding-top: 0;
 }
 .section__title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 
-    color: var(--main-title-color);
+  color: var(--main-title-color);
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    @media screen and (min-width: 1200px) {
-            margin-bottom: 50px;;
-            font-size: 36px;
-        }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .other-background {
-    background-color: #F5F4FA;
-
+  background-color: #f5f4fa;
 }
