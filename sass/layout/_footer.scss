@@ -220,6 +220,7 @@
 .footer-soc {
     display: flex;
     gap: 10px;
+    justify-content: center;
 
     @include tablet {
         align-items: center;

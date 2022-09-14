@@ -13,6 +13,12 @@ font-family: "Raleway", "sans-serif";
     @include desctop {
             @include font(null, 26px, 1.19, null);
         }
+
+        @include desctop {
+font-size: 26px;
+    line-height: 1.19;
+        }
+    
 }
 
 .logo__white {
